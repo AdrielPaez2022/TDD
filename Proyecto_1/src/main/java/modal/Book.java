@@ -1,5 +1,7 @@
 package modal;
 
+import modal.exceptions.BookInvalidException;
+
 import java.util.UUID;
 
 public class Book {
@@ -25,20 +27,20 @@ public class Book {
         UUID bookId = (uuid != null) ? uuid : UUID.randomUUID();
 
         if (titulo == null || titulo.trim().isEmpty()) {
-            throw new IllegalArgumentException("El título no puede ser nulo ni estar vacío.");
+            throw new BookInvalidException("El título no puede ser nulo ni estar vacío.");
         }
 
 
         if (paginas <= 0) {
-            throw new IllegalArgumentException("El número de páginas debe ser mayor a 0.");
+            throw new BookInvalidException("El número de páginas debe ser mayor a 0.");
         }
 
         if (autor == null || autor.trim().isEmpty()) {
-            throw new IllegalArgumentException("El autor no puede ser nulo ni estar vacío.");
+            throw new BookInvalidException("El autor no puede ser nulo ni estar vacío.");
         }
 
         if (isbn == null || !isValidIsbn(isbn)) {
-            throw new IllegalArgumentException("El formato del ISBN es inválido. Debe contener 10 o 13 dígitos.");
+            throw new BookInvalidException("El formato del ISBN es inválido. Debe contener 10 o 13 dígitos.");
         }
 
         return new Book(bookId, titulo.trim(), isbn.trim(), genero, paginas, autor.trim());
