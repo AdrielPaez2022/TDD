@@ -1,6 +1,6 @@
-package modal;
+package model;
 
-import modal.exceptions.BookInvalidException;
+import excepciones.BookInvalidException;
 
 import java.util.UUID;
 

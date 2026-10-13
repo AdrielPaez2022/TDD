@@ -1,6 +1,6 @@
-package modal;
+package model;
 
-import modal.exceptions.AuthorInvalidException;
+import excepciones.AuthorInvalidException;
 import org.junit.Test;
 
 import java.util.UUID;

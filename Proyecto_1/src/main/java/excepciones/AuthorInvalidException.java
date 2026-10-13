@@ -1,4 +1,4 @@
-package modal.exceptions;
+package excepciones;
 
 public class AuthorInvalidException extends IllegalArgumentException {
     public AuthorInvalidException(String message) {

@@ -1,6 +1,6 @@
-package modal;
+package model;
 
-import modal.exceptions.CategoryInvalidException;
+import excepciones.CategoryInvalidException;
 
 import java.util.UUID;
 

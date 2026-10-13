@@ -1,6 +1,6 @@
 package usecase;
 
-import modal.Book;
+import model.Book;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

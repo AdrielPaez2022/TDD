@@ -1,6 +1,6 @@
 package usecase;
 
-import modal.Book;
+import model.Book;
 
 public interface BooksRepository {
     boolean saveBook(Book book);

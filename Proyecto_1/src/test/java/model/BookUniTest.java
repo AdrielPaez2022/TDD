@@ -1,4 +1,4 @@
-package modal;
+package model;
 
 
 import org.junit.Test;

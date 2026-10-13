@@ -1,6 +1,6 @@
 package usecase;
 
-import modal.Book;
+import model.Book;
 
 import java.util.Objects;
 import java.util.UUID;
