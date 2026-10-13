@@ -1,0 +1,9 @@
+package usecase;
+
+import modal.Book;
+
+public interface BooksRepository {
+    boolean saveBook(Book book);
+
+    boolean existBook(String isbn);
+}
